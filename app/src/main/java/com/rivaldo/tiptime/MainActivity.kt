@@ -55,7 +55,7 @@ internal fun calculateTip(amount: Double, tipPercent: Double = 15.0, roundUp: Bo
 
 @Composable
 fun TipTimeScreen() {
-    var amountInput by remember { mutableStateOf("0") }
+    var amountInput by remember { mutableStateOf("") }
     val amount = amountInput.toDoubleOrNull() ?: 0.0
     var tipInput by remember { mutableStateOf("") }
     val tipPercent = tipInput.toDoubleOrNull() ?: 0.0
